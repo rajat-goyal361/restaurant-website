@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-size: 16px;
+    background-color: #cdb8b8;
+}
+.navbar{
+    width: 100%;
+    padding-left: 10%;
+    border: 2px solid rgb(224, 219, 219);
+    box-shadow: 4px 4px 5px grey;
+    background-color: azure;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 15;
+    
+}
+.wrapper{
+    position: absolute;
+    right: 120px;
+    
+}
+.auto_container{
+    max-width: 1200px;
+    margin: 0 auto ;
+}
+.logo{
+    height: 80%;
+}
+.nav {
+    width: 30px ;
+    display: block;
+
+}
+.nav div{
+    height: 4px;
+    background-color: black;
+    border-radius: 25px;
+    margin: 5px 0;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+    ;
+}
+.section> div{
+    margin-top: 140px;
+}
+.pimg{
+   margin-left: 40px; 
+}
+
+
+.discount{
+    display: inline;
+    border: 1px solid white;
+    background-color: rgb(65, 207, 65);
+    padding: 8px;
+    font-size: 22px;
+    box-shadow: 2px 2px 5px rgb(215, 211, 211);
+    transition: 0.1s ease-in;
+}
+.discount:hover{
+    font-size: 24px;
+}
+.heading h1{
+    font-size: 80px ;
+    margin-top: 30px;  
+}
+.heading p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.button{
+    font-size: 30px;
+    background-color: burlywood;
+    padding: 8px;
+    box-shadow: 2px 2px 5px grey;
+}
+.button:hover{
+    cursor: pointer;
+    font-size: 32px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin: 2px;
+    padding: 2px;
+    justify-content: space-around;
+    width: 1200px;
+    /* margin: 60px auto; */
+}
+.imform{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    padding: 2px 40px;
+}
+.data{
+    margin-left: 4px;
+    margin-top: 4px;
+}
+.button2{
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.ourmenu{
+    background-color: lightgreen;
+    padding: 4px;
+    margin: 4px;
+    font-size: 18px;
+}
+.explore{
+    width: 300px;
+    margin:40px auto;
+    
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 1200px;
+    margin: auto;
+}
+.imgs1{
+    grid-column: 1/ span 2;
+    grid-row: 1/span 2;
+}
+.imgs2{
+    grid-row: 1/span 2;
+}
+.imgs4{
+    grid-row: 2/span 2;
+}
+@media only screen And (max-width:786px){
+    .section{
+        flex-direction: column;
+
+    }
+    .pimg img{
+        width: 99%;
+        height: auto;
+    }
+    .content{
+
+    }
+    .pimg{
+        display: flex;
+        justify-content: center;
+    }
+}
